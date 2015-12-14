@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body
+{
+    font-family: 'Raleway';
+    background-color: #e7ffee;
+
+}
+.header
+{
+    border-style: dashed;
+    border-color: aqua;
+    text-align: center;
+    font-size: large;
+    color: dodgerblue;
+}
+.main_bar ul
+{
+
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-bottom: 40px;
+}
+.main_bar li
+{
+    display: inline;
+    margin-left: 20px;
+}
+.main_bar li:hover
+{
+    background-color: red;
+}
+.left_sidebar
+{
+	margin-left:-40px;
+    float: left;
+    color:blueviolet;
+    border-style: dashed;
+    border-color: #ffe7c5;
+    text-align: left;
+    width: 200px;
+	color:black;
+}
+#left_sidebarP
+{
+	margin-left:50px;
+	
+}
+left_sidebar ul
+{
+	list-style:none;
+	color:black;
+
+}
+left_sidebar a
+{
+    display: block;
+    color: black;
+    margin-bottom: 10px;
+}
+left_sidebar a:hover
+{
+    color: yellow;
+}
+.right_sidebar
+{
+    float: right;
+    color:blueviolet;
+    border-style: dashed;
+    border-color: #ffe7c5;
+    width: 200px;
+    text-align: center;
+
+}
+.main_Content
+{
+    color:green;
+    margin: auto;
+    width:1000px;
+    border-style: dashed;
+    border-color: #613dff;
+    text-align: center;
+}
+.footer
+{
+    position: absolute;
+    bottom:0;
+    color: deeppink;
+    width: 100%;
+    text-align: center;
+}
+a
+{
+
+    color: red;
+    text-decoration: none;
+
+}
