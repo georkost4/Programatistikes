@@ -22,6 +22,6 @@ or die('Something went wrong');
 
 echo 'You successfully Registered <br />';
 
-echo '<a href="main.html">Go back to main page</a>';
+echo '<a href="main.php">Go back to main page</a>';
 
 ?>

@@ -49,19 +49,19 @@ body
 	margin-left:50px;
 	
 }
-left_sidebar ul
+.left_sidebar ul
 {
 	list-style:none;
 	color:black;
 
 }
-left_sidebar a
+.left_sidebar a
 {
     display: block;
     color: black;
     margin-bottom: 10px;
 }
-left_sidebar a:hover
+.left_sidebar a:hover
 {
     color: yellow;
 }
@@ -91,6 +91,7 @@ left_sidebar a:hover
     color: deeppink;
     width: 100%;
     text-align: center;
+    margin-bottom: -200px;
 }
 a
 {
