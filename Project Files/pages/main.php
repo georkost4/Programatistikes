@@ -7,12 +7,12 @@ if(isset($_SESSION['logged'])) $flag=true;
 <head>
     <meta charset="UTF-8">
     <title>Agrotic Store</title>
-    <link rel="shortcut icon" href="images/icon.png" type="image/png">
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="../images/site_images/icon.png" type="image/png">
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
 </head>
 <body>
     <div class="header">
-		<img src="../images/background.png" id="im" />
+		<img src="../images/site_images/background.png" id="im" />
     </div>
     <div class="main_bar">
 		<div class="text">
@@ -28,39 +28,39 @@ if(isset($_SESSION['logged'])) $flag=true;
 
         <span id="left_sidebarP">Categories</span>
 		<ul>
-			<li><li><a href="products.php?category=lipasmata">Λιπάσματα</a></li></li>
+			<li><li><a href="products_php_files/products.php?category=lipasmata">Λιπάσματα</a></li></li>
 			<ul>
-				<li><a href="products.php?category=lipasmata&sub-category=biologika">Bιο-Λιπάσματα</a></li>
-				<li><a href="products.php?category=lipasmata&sub-category=organika">Οργανικα Λιπάσματα</a></li>
-				<li><a href="products.php?category=lipasmata&sub-category=xomata">Τύρφες-Χώματα</a></li>
+				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=biologika">Bιο-Λιπάσματα</a></li>
+				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=organika">Οργανικα Λιπάσματα</a></li>
+				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=xomata">Τύρφες-Χώματα</a></li>
 			</ul>
-			<li><li><a href="products.php?category=biologika-proionta">Βιολογικά Προιόντα</a></li></li>
+			<li><li><a href="products_php_files/products.php?category=biologika-proionta">Βιολογικά Προιόντα</a></li></li>
 			<ul>
-				<li><a href="products.php?category=biologika-proionta&sub-category=biologika">Bιο-Λιπάσματα</a></li>
-				<li><a href="products.php?category=biologika-proionta&sub-category=sporoi">Βιολογικοί Σπόροι Λαχανικών</a></li>
-				<li><a href="products.php?category=biologika-proionta&sub-category=xomata">Τύρφες-Χώματα</a></li>
+				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=biologika">Bιο-Λιπάσματα</a></li>
+				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=sporoi">Βιολογικοί Σπόροι Λαχανικών</a></li>
+				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=xomata">Τύρφες-Χώματα</a></li>
 			</ul>
-			<li><li><a href="products.php?category=apothitika">Απωθητικά Ζωων</a></li></li>
+			<li><li><a href="products_php_files/products.php?category=apothitika">Απωθητικά Ζωων</a></li></li>
 			<ul>
-				<li><a href="products.php?category=apothitika&sub-category=fidia">Απωθητικά για Φίδια</a></li>
-				<li><a href="products.php?category=apothitika&sub-category=gates">Απωθητικά για Γάτες/Σκύλους</a></li>
-				<li><a href="products.php?category=apothitika&sub-category=poulia">Απωθητικά για Περιστέρια</a></li>
-				<li><a href="products.php?category=apothitika&sub-category=pagides">Παγίδες</a></li>
+				<li><a href="products_php_files/products.php?category=apothitika&sub-category=fidia">Απωθητικά για Φίδια</a></li>
+				<li><a href="products_php_files/products.php?category=apothitika&sub-category=gates">Απωθητικά για Γάτες/Σκύλους</a></li>
+				<li><a href="products_php_files/products.php?category=apothitika&sub-category=poulia">Απωθητικά για Περιστέρια</a></li>
+				<li><a href="products_php_files/products.php?category=apothitika&sub-category=pagides">Παγίδες</a></li>
 			</ul>
-			<li><li><a href="products.php?category=ygeionomika">Προιόντα Υγειονομικής σημασίας</a></li></li>
+			<li><li><a href="products_php_files/products.php?category=ygeionomika">Προιόντα Υγειονομικής σημασίας</a></li></li>
 			<ul>
-				<li><a href="products.php?category=ygeionomika&sub-category=entomoktona">Εντομοκτόνα</a></li>
+				<li><a href="products_php_files/products.php?category=ygeionomika&sub-category=entomoktona">Εντομοκτόνα</a></li>
 			</ul>
-			<li><li><a href="products.php?category=lipasmata">Γεωργικά Εργαλεία-Μηχανήματα</a></li></li>
+			<li><li><a href="products_php_files/products.php?category=lipasmata">Γεωργικά Εργαλεία-Μηχανήματα</a></li></li>
 			<ul>
-				<li><a href="products.php?category=lipasmata&sub-category=doxeia">Ανοξείδωτα δοχεία τροφίμων</a></li>
-				<li><a href="products.php?category=lipasmata&sub-category=kladeftiria">Κλαδευτήρια</a></li>
-				<li><a href="products.php?category=lipasmata&sub-category=prionia">Πριόνια</a></li>
+				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=doxeia">Ανοξείδωτα δοχεία τροφίμων</a></li>
+				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=kladeftiria">Κλαδευτήρια</a></li>
+				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=prionia">Πριόνια</a></li>
 			</ul>
-			<li><li><a href="products.php?category=lipasmata">Μηχανήματα κήπου</a></li></li>
+			<li><li><a href="products_php_files/products.php?category=lipasmata">Μηχανήματα κήπου</a></li></li>
 			<ul>
-				<li><a href="products.php?category=lipasmata&sub-category=psalidia">Ψαλίδια</a></li>
-				<li><a href="products.php?category=lipasmata&sub-category=xartokoptika">Χορτοκοπτικά</a></li>
+				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=psalidia">Ψαλίδια</a></li>
+				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=xartokoptika">Χορτοκοπτικά</a></li>
 			</ul>
 			
 		</ul>
@@ -121,11 +121,11 @@ if(isset($_SESSION['logged'])) $flag=true;
 						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
 						'<a href="#" onclick="myFunction(1)">My Account</a>' .
 						'</form>' .
-						'<form id="addProducts" action="addProducts.php" method="POST">' .
+						'<form id="addProducts" action="products_php_files/addProducts.php" method="POST">' .
 						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
 						'<a href="#" onclick="myFunction(2)">Add Products</a>' .
 						'</form>' .
-						'<form id="RemoveProducts" action="RemoveProducts.php" method="POST">' .
+						'<form id="RemoveProducts" action="products_php_files/RemoveProducts.php" method="POST">' .
 						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
 						'<a href="#" onclick="myFunction(3)">Remove Products</a>' .
 						'</form>' .
@@ -268,11 +268,11 @@ if(isset($_SESSION['logged'])) $flag=true;
                         '<input type="text" name="user_id" value="'.$user_id.'" hidden><br>'.
                         '<a href="#" onclick="myFunction(1)">My Account</a>'.
                         '</form>'.
-                        '<form id="addProducts" action="addProducts.php" method="POST">'.
+                        '<form id="addProducts" action="products_php_files/addProducts.php" method="POST">'.
                         '<input type="text" name="user_id" value="'.$user_id.'" hidden><br>'.
                         '<a href="#" onclick="myFunction(2)">Add Products</a>'.
                         '</form>'.
-                        '<form id="RemoveProducts" action="RemoveProducts.php" method="POST">'.
+                        '<form id="RemoveProducts" action="products_php_files/RemoveProducts.php" method="POST">'.
                         '<input type="text" name="user_id" value="'.$user_id.'" hidden><br>'.
                         '<a href="#" onclick="myFunction(3)">Remove Products</a>'.
                         '</form>'.
@@ -285,7 +285,7 @@ if(isset($_SESSION['logged'])) $flag=true;
                         'alert("You are about to leave the page");'.
                         '}'.
                         '</script>'.
-                        '<p><a href="main.php">Log out</a></p>'.
+                        '<p><a href="register_login_php_files/logout.php">Log out</a></p>'.
                         '</div>';
                 }
                 else
@@ -308,8 +308,7 @@ if(isset($_SESSION['logged'])) $flag=true;
                         'alert("You are about to leave the page");'.
                         '}'.
                         '</script>'.
-                        '<p><a href="main.php">Log out</a></p>'.
-                        //'<p><a href="logout.php">Log out</a></p>'.
+                        '<p><a href="register_login_php_files/logout.php">Log out</a></p>'.
                         '</div>';
                 }
             }
@@ -325,7 +324,7 @@ if(isset($_SESSION['logged'])) $flag=true;
 <div class="main_Content">
 
     <p>News</p>
-    <img src="images/welcomeImage.jpg" width="800" height="400" alt="Welcome Image">
+    <img src="../images/site_images/welcomeImage.jpg" width="800" height="400" alt="Welcome Image">
 </div>
 
 <div class="footer">
@@ -335,10 +334,10 @@ if(isset($_SESSION['logged'])) $flag=true;
 
 
 
-    <div class="main_Content">
+    <div class="main_content">
 
         <p>News</p>
-        <img src="../images/welcomeImage.jpg" width="750" height="400" alt="Welcome Image">
+        <img src="../images/site_images/welcomeImage.jpg" width="750" height="400" alt="Welcome Image">
     </div>
 
     <div class="footer">
