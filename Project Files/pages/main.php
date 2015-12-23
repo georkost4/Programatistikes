@@ -1,8 +1,7 @@
 <?php
-//	session_start();
-//
-//	if(isset($_SESSION['logged'])) $flag=true;
-//?>
+session_start();
+if(isset($_SESSION['logged'])) $flag=true;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,55 +12,55 @@
 </head>
 <body>
     <div class="header">
-
-        <h2>Welcome to Agrotic Store</h2>
+		<img src="../images/background.png" id="im" />
     </div>
     <div class="main_bar">
-
-       <ul>
-           <li><a href="main.php">Αρχική Σελίδα</a></li>
-           <li><a href="contact.html">Επικοινωνία</a></li>
-           <li><a href="shopPoints.html">Καταστήματα</a></li>
-           <li><a href="news.html">News Feed</a></li>
-       </ul>
+		<div class="text">
+			<ul>
+				<li><a href="main.php">Αρχική Σελίδα</a></li>
+				<li><a href="contact.html">Επικοινωνία</a></li>
+				<li><a href="shopPoints.html">Καταστήματα</a></li>
+				<li><a href="news.html">News Feed</a></li>
+			</ul>
+		</div>
     </div>
     <div class="left_sidebar">
 
         <span id="left_sidebarP">Categories</span>
 		<ul>
-			<li><li><a href="lipasmata.php">Λιπάσματα</a></li></li>
+			<li><li><a href="products.php?category=lipasmata">Λιπάσματα</a></li></li>
 			<ul>
-				<li><a href="lipasmata.php">Bιο-Λιπάσματα</a></li>
-				<li><a href="lipasmata.php">Οργανικα Λιπάσματα</a></li>
-				<li><a href="lipasmata.php">Τύρφες-Χώματα</a></li>
+				<li><a href="products.php?category=lipasmata&sub-category=biologika">Bιο-Λιπάσματα</a></li>
+				<li><a href="products.php?category=lipasmata&sub-category=organika">Οργανικα Λιπάσματα</a></li>
+				<li><a href="products.php?category=lipasmata&sub-category=xomata">Τύρφες-Χώματα</a></li>
 			</ul>
-			<li><li><a href="biologikaProionta.php">Βιολογικά Προιόντα</a></li></li>
+			<li><li><a href="products.php?category=biologika-proionta">Βιολογικά Προιόντα</a></li></li>
 			<ul>
-				<li><a href="lipasmata.php">Bιο-Λιπάσματα</a></li>
-				<li><a href="lipasmata.php">Βιολογικοί Σπόροι Λαχανικών</a></li>
-				<li><a href="lipasmata.php">Τύρφες-Χώματα</a></li>
+				<li><a href="products.php?category=biologika-proionta&sub-category=biologika">Bιο-Λιπάσματα</a></li>
+				<li><a href="products.php?category=biologika-proionta&sub-category=sporoi">Βιολογικοί Σπόροι Λαχανικών</a></li>
+				<li><a href="products.php?category=biologika-proionta&sub-category=xomata">Τύρφες-Χώματα</a></li>
 			</ul>
-			<li><li><a href="lipasmata.php">Απωθητικά Ζωων</a></li></li>
+			<li><li><a href="products.php?category=apothitika">Απωθητικά Ζωων</a></li></li>
 			<ul>
-				<li><a href="biologicalDrugs.html">Απωθητικά για Φίδια</a></li>
-				<li><a href="lipasmata.php">Απωθητικά για Γάτες/Σκύλους</a></li>
-				<li><a href="lipasmata.php">Απωθητικά για Περιστέρια</a></li>
-				<li><a href="lipasmata.php">Παγίδες</a></li>
+				<li><a href="products.php?category=apothitika&sub-category=fidia">Απωθητικά για Φίδια</a></li>
+				<li><a href="products.php?category=apothitika&sub-category=gates">Απωθητικά για Γάτες/Σκύλους</a></li>
+				<li><a href="products.php?category=apothitika&sub-category=poulia">Απωθητικά για Περιστέρια</a></li>
+				<li><a href="products.php?category=apothitika&sub-category=pagides">Παγίδες</a></li>
 			</ul>
-			<li><li><a href="lipasmata.php">Προιόντα Υγειονομικής σημασίας</a></li></li>
+			<li><li><a href="products.php?category=ygeionomika">Προιόντα Υγειονομικής σημασίας</a></li></li>
 			<ul>
-				<li><a href="biologicalDrugs.html">Εντομοκτόνα</a></li>
+				<li><a href="products.php?category=ygeionomika&sub-category=entomoktona">Εντομοκτόνα</a></li>
 			</ul>
-			<li><li><a href="lipasmata.php">Γεωργικά Εργαλεία-Μηχανήματα</a></li></li>
+			<li><li><a href="products.php?category=lipasmata">Γεωργικά Εργαλεία-Μηχανήματα</a></li></li>
 			<ul>
-				<li><a href="biologicalDrugs.html">Ανοξείδωτα δοχεία τροφίμων</a></li>
-				<li><a href="lipasmata.php">Κλαδευτήρια</a></li>
-				<li><a href="lipasmata.php">Πριόνια</a></li>
+				<li><a href="products.php?category=lipasmata&sub-category=doxeia">Ανοξείδωτα δοχεία τροφίμων</a></li>
+				<li><a href="products.php?category=lipasmata&sub-category=kladeftiria">Κλαδευτήρια</a></li>
+				<li><a href="products.php?category=lipasmata&sub-category=prionia">Πριόνια</a></li>
 			</ul>
-			<li><li><a href="lipasmata.php">Μηχανήματα κήπου</a></li></li>
+			<li><li><a href="products.php?category=lipasmata">Μηχανήματα κήπου</a></li></li>
 			<ul>
-				<li><a href="biologicalDrugs.html">Ψαλίδια</a></li>
-				<li><a href="biologicalDrugs.html">Χορτοκοπτικά</a></li>
+				<li><a href="products.php?category=lipasmata&sub-category=psalidia">Ψαλίδια</a></li>
+				<li><a href="products.php?category=lipasmata&sub-category=xartokoptika">Χορτοκοπτικά</a></li>
 			</ul>
 			
 		</ul>
@@ -83,14 +82,11 @@
 			'<br /><br />'.
 			'<input type="submit" value="Submit">'.
 			'</form>'.
-
-			'<a href="register.html"> <p>Register Here</p> </a>';
-		//if(!(isset($_SESSION['logged']))) echo $form;
-		if(!($_SERVER['REQUEST_METHOD'] == 'POST'))echo $form;
+			'<a href="register.html" target="popup"> <p>Register Here</p> </a>';
 		if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		{
+			$givenUsername=$_POST['username'];
 
-				$givenUsername = $_POST['username'];
 			if (isset($givenUsername))
 			{
 				$check_for_user_query = "SELECT * from users where username='$givenUsername'";
@@ -105,76 +101,74 @@
 					$username   = $row['username'];
 					$password   = $row['password'];
 				}
-				if(isset($first_name))
-				{
-					echo 'You successfully Logged In <br />'.
-							$first_name.'    '.$last_name;
-					//$_SESSION['logged']=true;
+				if(isset($first_name)) {
+					echo 'You successfully Logged In <br />' .
+							$first_name . '    ' . $last_name;
+					$_SESSION['logged'] = true;
+					$_SESSION['user'] = $username;
 
-					if($username=='admin') //Change admin for general use;
-					{
-						echo
-								'<div class="account_panel">' .
-									'<form id="admin_account" action="account.php" method="POST">'.
-										'<input type="text" name="user_id" value="'.$user_id.'" hidden><br>'.
-										'<a href="#" onclick="myFunction(1)">My Account</a>'.
-									'</form>'.
-									'<form id="addProducts" action="addProducts.php" method="POST">'.
-										'<input type="text" name="user_id" value="'.$user_id.'" hidden><br>'.
-										'<a href="#" onclick="myFunction(2)">Add Products</a>'.
-									'</form>'.
-									'<form id="RemoveProducts" action="RemoveProducts.php" method="POST">'.
-										'<input type="text" name="user_id" value="'.$user_id.'" hidden><br>'.
-										'<a href="#" onclick="myFunction(3)">Remove Products</a>'.
-									'</form>'.
+					$_SESSION['user_id']=$user_id;
 
-									'<script>'.
-										'function myFunction(formClicked)'.
-										'{'.
-											'if(formClicked==1) document.getElementById("admin_account").submit();'.
-											'else if(formClicked==2) document.getElementById("addProducts").submit();'.
-											'else if(formClicked==3) document.getElementById("RemoveProducts").submit();'.
-											'alert("You are about to leave the page");'.
-										'}'.
-									'</script>'.
+				}}}
+		if(!isset($_SESSION['logged'])) echo $form;
+		else {
 
-									'<p><a href="main.php">Log out</a></p>'.
-								'</div>';
-					}
-					else
-					{
-						echo
-								'<div class="account_panel">' .
-									'<form id="account" action="account.php" method="POST">'.
-										'<input type="text" name="user_id" value="'.$user_id.'" hidden><br>'.
-										'<a href="#" onclick="myFunction(1)">My Account</a>'.
-									'</form>'.
-									'<form id="wallet" action="wallet.php" method="POST">'.
-										'<input type="text" name="user_id" value="'.$user_id.'" hidden><br>'.
-										'<a href="#" onclick="myFunction(2)">My Wallet</a>'.
-									'</form>'.
+			if ($_SESSION['user'] == 'admin') //Change admin for general use;
+			{
+				echo
+						'<div class="account_panel">' .
+						'<form id="admin_account" action="account.php" method="POST">' .
+						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+						'<a href="#" onclick="myFunction(1)">My Account</a>' .
+						'</form>' .
+						'<form id="addProducts" action="addProducts.php" method="POST">' .
+						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+						'<a href="#" onclick="myFunction(2)">Add Products</a>' .
+						'</form>' .
+						'<form id="RemoveProducts" action="RemoveProducts.php" method="POST">' .
+						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+						'<a href="#" onclick="myFunction(3)">Remove Products</a>' .
+						'</form>' .
 
-									'<script>'.
-										'function myFunction(formClicked)'.
-										'{'.
-											'if(formClicked==1) document.getElementById("account").submit();'.
-											'else if(formClicked==2) document.getElementById("wallet").submit();'.
-											'alert("You are about to leave the page");'.
-										'}'.
-									'</script>'.
+						'<script>' .
+						'function myFunction(formClicked)' .
+						'{' .
+						'if(formClicked==1) document.getElementById("admin_account").submit();' .
+						'else if(formClicked==2) document.getElementById("addProducts").submit();' .
+						'else if(formClicked==3) document.getElementById("RemoveProducts").submit();' .
+						'alert("You are about to leave the page");' .
+						'}' .
+						'</script>' .
 
-									'<p><a href="main.php">Log out</a></p>'.
-									//'<p><a href="logout.php">Log out</a></p>'.
-								'</div>';
-					}
+						'<p><a href="logout.php">Log out</a></p>' .
+						'</div>';
+			} else {
+				echo
+						'<div class="account_panel">' .
+						'<form id="account" action="account.php" method="POST">' .
+						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+						'<a href="#" onclick="myFunction(1)">My Account</a>' .
+						'</form>' .
+						'<form id="wallet" action="wallet.php" method="POST">' .
+						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+						'<a href="#" onclick="myFunction(2)">My Wallet</a>' .
+						'</form>' .
 
-				}
-				else echo 'No user found that matches given input <br />'.$form;
+						'<script>' .
+						'function myFunction(formClicked)' .
+						'{' .
+						'if(formClicked==1) document.getElementById("account").submit();' .
+						'else if(formClicked==2) document.getElementById("wallet").submit();' .
+						'alert("You are about to leave the page");' .
+						'}' .
+						'</script>' .
+
+						'<p><a href="logout.php">Log out</a></p>' .
+						'</div>';
 			}
-			else echo 'Please Give Username';
 		}
-
 		?>
+
     </div>
 
 
@@ -182,7 +176,7 @@
     <div class="main_Content">
 
         <p>News</p>
-        <img src="../images/welcomeImage.jpg" width="800" height="400" alt="Welcome Image">
+        <img src="../images/welcomeImage.jpg" width="750" height="400" alt="Welcome Image">
     </div>
 
     <div class="footer">
