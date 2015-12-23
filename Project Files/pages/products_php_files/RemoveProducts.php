@@ -38,7 +38,8 @@ include_once("../Connect.php");
     }
     echo '</table>';
     ?>
-
+    <br /><br /><br />
+    <a href="../main.php"> Go to home page</a>
 </div>
 
 

@@ -14,6 +14,16 @@ body
     width: 800px;
     border: dashed #2cf8ff thick;
 }
+.main_content a
+{
+    font-size: 30px;
+    text-decoration: none;
+    color: red;
+}
+a:hover
+{
+    color:green;
+}
 table,td
 {
     border: 2px solid black;
