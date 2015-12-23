@@ -1,10 +1,5 @@
 <?php
-include_once("Connect.php");
-
-
-$user_id=$_POST['user_id'];
-
-
+include_once("../Connect.php");
 
 ?>
 <!DOCTYPE html>
@@ -12,8 +7,8 @@ $user_id=$_POST['user_id'];
     <head>
         <meta charset="UTF-8">
         <title> Add Products to Site</title>
-        <link rel="shortcut icon" href="../images/icon.png" type="image/png">
-        <link type="text/css" rel="stylesheet" href="../css/manage_products.css" />
+        <link rel="shortcut icon" href="../../images/icon.png" type="image/png">
+        <link type="text/css" rel="stylesheet" href="../../css/manage_products.css" />
     </head>
     <div class="header">
     <p>Welcome</p>
@@ -72,10 +67,10 @@ $user_id=$_POST['user_id'];
         if(isset($_POST['prod_sub_category'])) $prod_sub_category = $_POST['prod_sub_category'];
         else $prod_sub_category=NULL;
 
-        $target_dir="upload/";
+        $target_dir="products_uploaded_images/";
         $time=time();
         $target_file=$target_dir.$time.$_FILES['prod_image']['name'];
-        $absolute_path='http://localhost/Programmatistikes/Project/Project Files/pages/'.$target_file;
+        $absolute_path='http://localhost/Programmatistikes/Project/Project Files/pages/products_php_files/'.$target_file;
         $check=getimagesize($_FILES['prod_image']['tmp_name']);
 
         if($check !== false)
@@ -123,7 +118,7 @@ $user_id=$_POST['user_id'];
     ?>
 
     <br />
-    <p><?php echo '<br /> <a href="main.php">Go Back</a> <br />';?></p>
+    <p><?php echo '<br /> <a href="../main.php">Go Back</a> <br />';?></p>
 
     </div>
 

@@ -1,19 +1,13 @@
 <?php
-include_once("Connect.php");
-
-
-$user_id=$_POST['user_id'];
-
-
-
+include_once("../Connect.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Add Products to Site</title>
-    <link rel="shortcut icon" href="../images/icon.png" type="image/png">
-    <link type="text/css" rel="stylesheet" href="../css/products.css" />
+    <title> Remove Products to Site</title>
+    <link rel="shortcut icon" href="../../images/site_images/icon.png" type="image/png">
+    <link type="text/css" rel="stylesheet" href="../../css/products.css" />
 </head>
 <div class="header">
     <p>Welcome</p>

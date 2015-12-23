@@ -1,5 +1,5 @@
 <?php
-    include_once("Connect.php");
+    include_once("../Connect.php");
     $category     = $_GET['category'];
     if(isset($_GET['sub-category'])) {$sub_category = $_GET['sub-category'];}?>
 
@@ -9,8 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Products</title>
-    <link rel="shortcut icon" href="../images/icon.png" type="image/png">
-    <link type="text/css" rel="stylesheet" href="../css/products.css" />
+    <link rel="shortcut icon" href="../../images/site_images/icon.png" type="image/png">
+    <link type="text/css" rel="stylesheet" href="../../css/products.css" />
 </head>
 <body>
     <div class="header">

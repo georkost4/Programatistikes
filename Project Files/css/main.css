@@ -3,13 +3,10 @@ body
 {
     font-family: 'Raleway';
     background-color: #e7ffee;
-    width: 1360px;
+    width: 1330px;
+    height: 1000px;
     margin: auto;
 
-}
-.header
-{
-    position:relative;
 }
 #im
 {
@@ -23,11 +20,10 @@ body
 }
 .text ul
 {
-
     list-style-type: none;
     text-align: center;
-    width: 100%;
-    background-color: #f1f1f1;
+    width: 97%;
+    background-color: #acd7f1;
 }
 .text li
 {
@@ -80,28 +76,25 @@ body
 }
 .main_content
 {
-    color:green;
-    width:300px;
-    height: 100%;
-
-    border-style: dashed;
-    border-color: #613dff;
-    text-align: center;
+    width: 800px;
+    position:relative;
+    left:-900px;
+    top:-180px;
+    border: groove chartreuse thin;
 }
 .footer
 {
-    position: absolute;
-    bottom:0;
-    color: deeppink;
-    text-align: center;
-    width: inherit;
-    margin-bottom: -500px;
+    position: relative;
+    bottom: -160px;
+    left: -600px;
+    background-color: #65c5b2;
+    width: 100%;
+    height: inherit;
+    color: red;
 }
 
 a
 {
-
     color: red;
     text-decoration: none;
-
 }

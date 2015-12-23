@@ -7,4 +7,4 @@ if (isset($_SESSION['logged']))
     unset($_SESSION['user']);
     session_destroy();
 }
-header("location:main.php");
+header("location:../main.php");
