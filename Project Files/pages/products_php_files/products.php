@@ -22,8 +22,8 @@
         <p>Chosen sub-Category <?php if(isset($_GET['sub-category']))echo $sub_category;?></p>
 
         <?php
-            echo '<table>';
-            $query = "SELECT * FROM products WHERE category='$category' ORDER BY name DESC";
+            if(isset($sub_category))  $query = "SELECT * FROM products WHERE category='$category' OR sub_category='$sub_category' ORDER BY name DESC";
+            else $query = "SELECT * FROM products WHERE category='$category' ORDER BY name DESC";
             $data = mysqli_query($dbc, $query);
 
             echo '<table>';
@@ -34,16 +34,15 @@
                     '<td>' . $row["value"] . '</td>' .
                     '</tr>' .
                     '<tr>' .
-
                     '</tr>' .
                     '<tr>' .
                     '<td><p>' . $row["description"] . '</p></td>' .
-                    '<td><a href="buy.php">Buy</a></td>' .
+                    '<td><a href="buy.php?id=' . $row["product_id"].'">Buy</a></td>' .
                     '</tr>';
             }
             echo '</table>';
         ?>
-
+    <a href="../main.php">Go to home </a>
     </div>
 
     <div class="footer">

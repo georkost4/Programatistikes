@@ -36,7 +36,7 @@ if(isset($_SESSION['logged'])) $flag=true;
 			</ul>
 			<li><li><a href="products_php_files/products.php?category=biologika-proionta">Βιολογικά Προιόντα</a></li></li>
 			<ul>
-				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=biologika">Bιο-Λιπάσματα</a></li>
+				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=lipasmata">Bιο-Λιπάσματα</a></li>
 				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=sporoi">Βιολογικοί Σπόροι Λαχανικών</a></li>
 				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=xomata">Τύρφες-Χώματα</a></li>
 			</ul>
@@ -51,16 +51,16 @@ if(isset($_SESSION['logged'])) $flag=true;
 			<ul>
 				<li><a href="products_php_files/products.php?category=ygeionomika&sub-category=entomoktona">Εντομοκτόνα</a></li>
 			</ul>
-			<li><li><a href="products_php_files/products.php?category=lipasmata">Γεωργικά Εργαλεία-Μηχανήματα</a></li></li>
+			<li><li><a href="products_php_files/products.php?category=ergaleia">Γεωργικά Εργαλεία-Μηχανήματα</a></li></li>
 			<ul>
-				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=doxeia">Ανοξείδωτα δοχεία τροφίμων</a></li>
-				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=kladeftiria">Κλαδευτήρια</a></li>
-				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=prionia">Πριόνια</a></li>
+				<li><a href="products_php_files/products.php?category=ergaleia&sub-category=doxeia">Ανοξείδωτα δοχεία τροφίμων</a></li>
+				<li><a href="products_php_files/products.php?category=ergaleia&sub-category=kladeftiria">Κλαδευτήρια</a></li>
+				<li><a href="products_php_files/products.php?category=ergaleia&sub-category=prionia">Πριόνια</a></li>
 			</ul>
-			<li><li><a href="products_php_files/products.php?category=lipasmata">Μηχανήματα κήπου</a></li></li>
+			<li><li><a href="products_php_files/products.php?category=khpos">Μηχανήματα κήπου</a></li></li>
 			<ul>
-				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=psalidia">Ψαλίδια</a></li>
-				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=xartokoptika">Χορτοκοπτικά</a></li>
+				<li><a href="products_php_files/products.php?category=khpos&sub-category=psalidia">Ψαλίδια</a></li>
+				<li><a href="products_php_files/products.php?category=khpos&sub-category=xartokoptika">Χορτοκοπτικά</a></li>
 			</ul>
 			
 		</ul>
@@ -82,7 +82,7 @@ if(isset($_SESSION['logged'])) $flag=true;
 			'<br /><br />'.
 			'<input type="submit" value="Submit">'.
 			'</form>'.
-			'<a href="register.html" target="popup"> <p>Register Here</p> </a>';
+			'<a href="register_login_php_files/register.html" target="popup"> <p>Register Here</p> </a>';
 		if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		{
 			$givenUsername=$_POST['username'];
