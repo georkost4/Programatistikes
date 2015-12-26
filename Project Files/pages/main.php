@@ -34,12 +34,6 @@ if(isset($_SESSION['logged'])) $flag=true;
 				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=organika">Οργανικα Λιπάσματα</a></li>
 				<li><a href="products_php_files/products.php?category=lipasmata&sub-category=xomata">Τύρφες-Χώματα</a></li>
 			</ul>
-			<li><li><a href="products_php_files/products.php?category=biologika-proionta">Βιολογικά Προιόντα</a></li></li>
-			<ul>
-				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=lipasmata">Bιο-Λιπάσματα</a></li>
-				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=sporoi">Βιολογικοί Σπόροι Λαχανικών</a></li>
-				<li><a href="products_php_files/products.php?category=biologika-proionta&sub-category=xomata">Τύρφες-Χώματα</a></li>
-			</ul>
 			<li><li><a href="products_php_files/products.php?category=apothitika">Απωθητικά Ζωων</a></li></li>
 			<ul>
 				<li><a href="products_php_files/products.php?category=apothitika&sub-category=fidia">Απωθητικά για Φίδια</a></li>
@@ -177,7 +171,7 @@ if(isset($_SESSION['logged'])) $flag=true;
 
     <div class="footer">
 
-        <p>Copyright 2015</p>
+        <p> Agrotic Store © 2015</p>
     </div>
 
 </body>

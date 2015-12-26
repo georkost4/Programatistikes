@@ -22,7 +22,7 @@
         <p>Chosen sub-Category <?php if(isset($_GET['sub-category']))echo $sub_category;?></p>
 
         <?php
-            if(isset($sub_category))  $query = "SELECT * FROM products WHERE category='$category' OR sub_category='$sub_category' ORDER BY name DESC";
+            if(isset($sub_category))  $query = "SELECT * FROM products WHERE category='$category' AND sub_category='$sub_category' ORDER BY name DESC";
             else $query = "SELECT * FROM products WHERE category='$category' ORDER BY name DESC";
             $data = mysqli_query($dbc, $query);
 
