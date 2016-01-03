@@ -46,7 +46,7 @@ include_once("../Connect.php");
 </div>
 
 <div class="footer">
-    <p>All Right's Reserved 2015</p>
+    <p>Agrotic Store © 2016</p>
 </div>
 
 </body>

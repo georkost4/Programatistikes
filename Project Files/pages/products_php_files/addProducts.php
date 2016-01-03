@@ -17,7 +17,7 @@ include_once("../Connect.php");
     <div class="main_content">
 
     <h2> Please fill in the form to add a product.</h2>
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="" method="post" id="details_form" enctype="multipart/form-data">
         <table>
             <tr>
                 <td> Name</td>
@@ -38,7 +38,14 @@ include_once("../Connect.php");
             <tr>
             <tr>
                 <td> Category </td>
-                <td> <input type="text" name="prod_category" required> </td>
+                <td>
+                    <select form="details_form" name="prod_category" required >
+                        <option name="lipasmata" >lipasmata</option>
+                        <option name="apothitika">apothitika </option>
+                        <option name="ygeionomika">ygeionomika</option>
+                        <option name="ergaleia">ergaleia</option>
+                        <option name="khpos">khpos</option>
+                    </select>
             </tr>
             <tr>
                 <td> Sub-Category </td>
@@ -123,7 +130,7 @@ include_once("../Connect.php");
     </div>
 
     <div class="footer">
-        <p>All Right's Reserved 2015</p>
+        <p>Agrotic Store © 2016</p>
     </div>
 
     </body>

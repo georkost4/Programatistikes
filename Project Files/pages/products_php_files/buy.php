@@ -1,7 +1,7 @@
 <?php
 include_once("../connect.php");
 $prod_id=$_GET['id'];
-$shipping_form=
+$shipping_form='<br /><br /><br />'.
       '<form action="" method="post">'.
     '<table id="shipping_details_form">'.
         '<tr>'.
@@ -19,6 +19,14 @@ $shipping_form=
         '<tr> '.
             '<td> Postal Code: </td> '.
             '<td> <input type="text" name="postal_code"> </td> '.
+        '</tr> '.
+        '<tr> '.
+            '<td> Shipping Method: </td> '.
+            '<td>'.
+                  '<select name="paymentForm" form="paymentForm">'.
+                  '<option value="deposit">Deposit</option>'.
+                  '<option value="by_cash">By Cash</option>'.
+                '</select>'.
         '</tr> '.
         '<tr> <td> <input type="submit" value="Buy" /> </td></tr> '.
     '</table> '.
@@ -91,7 +99,8 @@ session_start();
             $result=mysqli_query($link,$query) or die(mysqli_error($link));
 
             while($row=mysqli_fetch_array($result)) $stock=$row['stock'];
-            echo 'stock = '.$stock.'<br />';
+
+            echo 'stock = '.$stock.'<br />';   //DELETE THIS LINE FOR PRESENTATION
 
             return $stock;
 

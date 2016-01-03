@@ -31,7 +31,7 @@
                 echo '<tr>' .
                     '<td rowspan="3"> <p><img src="' . $row["image_path"].'" width="100px" height="100px"> </p></td>' .
                     '<td><p>' . $row["name"] . '</p></td>' .
-                    '<td>' . $row["value"] . '</td>' .
+                    '<td>' . $row["value"] . '€</td>' .
                     '</tr>' .
                     '<tr>' .
                     '</tr>' .
@@ -46,7 +46,7 @@
     </div>
 
     <div class="footer">
-        <p>All Right's Reserved 2015</p>
+        <p>Agrotic Store © 2016</p>
     </div>
 
 </body>

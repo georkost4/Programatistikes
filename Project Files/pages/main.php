@@ -77,13 +77,15 @@ if(isset($_SESSION['logged'])) $flag=true;
 			'<input type="submit" value="Submit">'.
 			'</form>'.
 			'<a href="register_login_php_files/register.html" target="popup"> <p>Register Here</p> </a>';
+
 		if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		{
 			$givenUsername=$_POST['username'];
+			$givenPassword=$_POST['password'];
 
-			if (isset($givenUsername))
+			if (isset($givenUsername)&& isset($givenPassword))
 			{
-				$check_for_user_query = "SELECT * from users where username='$givenUsername'";
+				$check_for_user_query = "SELECT * from users where username='$givenUsername' AND password='$givenPassword'";
 
 				$result = mysqli_query($dbc, $check_for_user_query)
 				or die(printf("Error: %s\n", mysqli_error($dbc)));
@@ -95,19 +97,24 @@ if(isset($_SESSION['logged'])) $flag=true;
 					$username   = $row['username'];
 					$password   = $row['password'];
 				}
-				if(isset($first_name)) {
+				if(isset($first_name))
+				{
 					echo 'You successfully Logged In <br />' .
-							$first_name . '    ' . $last_name;
-					$_SESSION['logged'] = true;
-					$_SESSION['user'] = $username;
+							$first_name . '    ' . $last_name.'<br />';
 
-					$_SESSION['user_id']=$user_id;
+					$_SESSION['logged']   = true;
+					$_SESSION['user']     = $username;
+					$_SESSION['password'] = $givenPassword;
+					$_SESSION['user_id']  = $user_id;
 
-				}}}
+				}
+			}
+		}
 		if(!isset($_SESSION['logged'])) echo $form;
-		else {
+		else
+		{
 
-			if ($_SESSION['user'] == 'admin') //Change admin for general use;
+			if (($_SESSION['user'] == 'admin') &&($_SESSION['password'] == 'admin'))
 			{
 				echo
 						'<div class="account_panel">' .
@@ -125,18 +132,20 @@ if(isset($_SESSION['logged'])) $flag=true;
 						'</form>' .
 
 						'<script>' .
-						'function myFunction(formClicked)' .
-						'{' .
-						'if(formClicked==1) document.getElementById("admin_account").submit();' .
-						'else if(formClicked==2) document.getElementById("addProducts").submit();' .
-						'else if(formClicked==3) document.getElementById("RemoveProducts").submit();' .
-						'alert("You are about to leave the page");' .
-						'}' .
+							'function myFunction(formClicked)' .
+							'{' .
+								'if     (formClicked==1) document.getElementById("admin_account").submit();' .
+								'else if(formClicked==2) document.getElementById("addProducts").submit();' .
+								'else if(formClicked==3) document.getElementById("RemoveProducts").submit();' .
+								'alert("You are about to leave the page");' .
+							'}' .
 						'</script>' .
 
 						'<p><a href="register_login_php_files/logout.php">Log out</a></p>' .
 						'</div>';
-			} else {
+			}
+			else
+			{
 				echo
 						'<div class="account_panel">' .
 						'<form id="account" action="account.php" method="POST">' .
@@ -149,12 +158,12 @@ if(isset($_SESSION['logged'])) $flag=true;
 						'</form>' .
 
 						'<script>' .
-						'function myFunction(formClicked)' .
-						'{' .
-						'if(formClicked==1) document.getElementById("account").submit();' .
-						'else if(formClicked==2) document.getElementById("wallet").submit();' .
-						'alert("You are about to leave the page");' .
-						'}' .
+							'function myFunction(formClicked)' .
+							'{' .
+								'if     (formClicked==1) document.getElementById("account").submit();' .
+								'else if(formClicked==2) document.getElementById("wallet").submit();' .
+								'alert("You are about to leave the page");' .
+							'}' .
 						'</script>' .
 
 						'<p><a href="register_login_php_files/logout.php">Log out</a></p>' .
@@ -171,7 +180,7 @@ if(isset($_SESSION['logged'])) $flag=true;
 
     <div class="footer">
 
-        <p> Agrotic Store © 2015</p>
+        <p> Agrotic Store © 2016</p>
     </div>
 
 </body>

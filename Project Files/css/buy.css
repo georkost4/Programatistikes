@@ -1,4 +1,10 @@
 #messageP
 {
-    color: #2cf8ff;
+    color: #26dbd2;
+    font-size: large;
+    font-family: "Comic Sans MS";
+}
+a
+{
+    color: red;
 }
