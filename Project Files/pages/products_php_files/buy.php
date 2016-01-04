@@ -23,10 +23,10 @@ $shipping_form='<br /><br /><br />'.
         '<tr> '.
             '<td> Shipping Method: </td> '.
             '<td>'.
-                  '<select name="paymentForm" form="paymentForm">'.
-                  '<option value="deposit">Deposit</option>'.
-                  '<option value="by_cash">By Cash</option>'.
-                '</select>'.
+                  '<select name="method">'.
+                      '<option value="Deposit">Deposit</option>'.
+                      '<option selected="selected" value="By Cash">By Cash</option>'.
+                  '</select>'.
         '</tr> '.
         '<tr> <td> <input type="submit" value="Buy" /> </td></tr> '.
     '</table> '.
@@ -50,11 +50,14 @@ session_start();
 
                 if($stock>0)
                 {
+
                     buyItem($prod_id,$dbc);
 
-                    echo ' You successfully bought the product <br />';
+                    echo ' You successfully bought the product <br />'.
+                        '<br /> <a href="../main.php">Go to home page</a> ';
                 }
-                else echo ' This product is no more available for purchase <br /> ';
+                else echo ' This product is no more available for purchase <br /> '.
+                    '<br /> <a href="../main.php">Go to home page</a> ';
 
             }
             else
@@ -65,6 +68,7 @@ session_start();
                     $address  = $_POST['address'];
                     $city     = $_POST['city'];
                     $postal   = $_POST['postal_code'];
+                    $method   = $_POST['method'];
 
 
                     $stock=checkStockFromDatabase($prod_id,$dbc);
@@ -73,10 +77,12 @@ session_start();
                     {
                         buyItem($prod_id,$dbc);
                         echo 'Order completed with the following shipping details <br />'.
-                             'Full Name:     '.$name.'    <br />'.
-                             'Address:       '.$address.' <br />'.
-                             'City:          '.$city.'    <br />'.
-                             'Postal Code :  '.$postal.'  <br />';
+                             'Full Name:      '.$name.'    <br />'.
+                             'Address:        '.$address.' <br />'.
+                             'City:           '.$city.'    <br />'.
+                             'Postal Code :   '.$postal.'  <br />'.
+                             'Shipping Method:'.$method.' <br />'.
+                             '<br /> <a href="../main.php">Go to home page</a> ';
                     }
                     else
                     {
@@ -114,7 +120,6 @@ session_start();
 
             return true;
         }
-
         ?>
     </body>
 </html>

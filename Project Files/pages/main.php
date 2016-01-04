@@ -1,6 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['logged'])) $flag=true;
+else $flag=false;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,6 +68,7 @@ if(isset($_SESSION['logged'])) $flag=true;
 		<?php
 		include_once("connect.php");
 
+		if($flag) echo 'Welcome Back';
 
 			$form='<p>Login Form</p>'.
 			'<form action="" method="post">'.
@@ -80,8 +82,8 @@ if(isset($_SESSION['logged'])) $flag=true;
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		{
-			$givenUsername=$_POST['username'];
-			$givenPassword=$_POST['password'];
+			$givenUsername  =  $_POST['username'];
+			$givenPassword  =  $_POST['password'];
 
 			if (isset($givenUsername)&& isset($givenPassword))
 			{
@@ -118,55 +120,55 @@ if(isset($_SESSION['logged'])) $flag=true;
 			{
 				echo
 						'<div class="account_panel">' .
-						'<form id="admin_account" action="account.php" method="POST">' .
-						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
-						'<a href="#" onclick="myFunction(1)">My Account</a>' .
-						'</form>' .
-						'<form id="addProducts" action="products_php_files/addProducts.php" method="POST">' .
-						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
-						'<a href="#" onclick="myFunction(2)">Add Products</a>' .
-						'</form>' .
-						'<form id="RemoveProducts" action="products_php_files/RemoveProducts.php" method="POST">' .
-						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
-						'<a href="#" onclick="myFunction(3)">Remove Products</a>' .
-						'</form>' .
+							'<form id="admin_account" action="account.php" method="POST">' .
+								'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+								'<a href="#" onclick="myFunction(1)">My Account</a>' .
+							'</form>' .
+							'<form id="addProducts" action="products_php_files/addProducts.php" method="POST">' .
+								'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+								'<a href="#" onclick="myFunction(2)">Add Products</a>' .
+							'</form>' .
+							'<form id="RemoveProducts" action="products_php_files/RemoveProducts.php" method="POST">' .
+								'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+								'<a href="#" onclick="myFunction(3)">Remove Products</a>' .
+							'</form>' .
 
-						'<script>' .
-							'function myFunction(formClicked)' .
-							'{' .
-								'if     (formClicked==1) document.getElementById("admin_account").submit();' .
-								'else if(formClicked==2) document.getElementById("addProducts").submit();' .
-								'else if(formClicked==3) document.getElementById("RemoveProducts").submit();' .
-								'alert("You are about to leave the page");' .
-							'}' .
-						'</script>' .
+							'<script>' .
+								'function myFunction(formClicked)' .
+								'{' .
+									'if     (formClicked==1) document.getElementById("admin_account").submit();' .
+									'else if(formClicked==2) document.getElementById("addProducts").submit();' .
+									'else if(formClicked==3) document.getElementById("RemoveProducts").submit();' .
+									'alert("You are about to leave the page");' .
+								'}' .
+							'</script>' .
 
-						'<p><a href="register_login_php_files/logout.php">Log out</a></p>' .
+							'<p><a href="register_login_php_files/logout.php">Log out</a></p>' .
 						'</div>';
 			}
 			else
 			{
 				echo
 						'<div class="account_panel">' .
-						'<form id="account" action="account.php" method="POST">' .
-						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
-						'<a href="#" onclick="myFunction(1)">My Account</a>' .
-						'</form>' .
-						'<form id="wallet" action="wallet.php" method="POST">' .
-						'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
-						'<a href="#" onclick="myFunction(2)">My Wallet</a>' .
-						'</form>' .
+							'<form id="account" action="account.php" method="POST">' .
+								'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+								'<a href="#" onclick="myFunction(1)">My Account</a>' .
+							'</form>' .
+							'<form id="wallet" action="wallet.php" method="POST">' .
+								'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
+								'<a href="#" onclick="myFunction(2)">My Wallet</a>' .
+							'</form>' .
 
-						'<script>' .
-							'function myFunction(formClicked)' .
-							'{' .
-								'if     (formClicked==1) document.getElementById("account").submit();' .
-								'else if(formClicked==2) document.getElementById("wallet").submit();' .
-								'alert("You are about to leave the page");' .
-							'}' .
-						'</script>' .
+							'<script>' .
+								'function myFunction(formClicked)' .
+								'{' .
+									'if     (formClicked==1) document.getElementById("account").submit();' .
+									'else if(formClicked==2) document.getElementById("wallet").submit();' .
+									'alert("You are about to leave the page");' .
+								'}' .
+							'</script>' .
 
-						'<p><a href="register_login_php_files/logout.php">Log out</a></p>' .
+							'<p><a href="register_login_php_files/logout.php">Log out</a></p>' .
 						'</div>';
 			}
 		}
@@ -179,7 +181,6 @@ if(isset($_SESSION['logged'])) $flag=true;
     </div>
 
     <div class="footer">
-
         <p> Agrotic Store © 2016</p>
     </div>
 

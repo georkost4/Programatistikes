@@ -26,7 +26,7 @@ include_once("../Connect.php");
         echo '<tr>' .
             '<td rowspan="3"> <p><img src="' . $row["image_path"].'" width="100px" height="100px"> </p></td>' .
             '<td><p>' . $row["name"] . '</p></td>' .
-            '<td>' . $row["value"] . '</td>' .
+            '<td>' . $row["value"] . '€</td>' .
             '</tr>' .
             '<tr>' .
 

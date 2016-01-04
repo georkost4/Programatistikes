@@ -17,7 +17,7 @@ include_once("../Connect.php");
     <div class="main_content">
 
     <h2> Please fill in the form to add a product.</h2>
-    <form action="" method="post" id="details_form" enctype="multipart/form-data">
+    <form action="" method="post" enctype="multipart/form-data">
         <table>
             <tr>
                 <td> Name</td>
@@ -39,7 +39,7 @@ include_once("../Connect.php");
             <tr>
                 <td> Category </td>
                 <td>
-                    <select form="details_form" name="prod_category" required >
+                    <select name="prod_category" required >
                         <option name="lipasmata" >lipasmata</option>
                         <option name="apothitika">apothitika </option>
                         <option name="ygeionomika">ygeionomika</option>
@@ -109,8 +109,6 @@ include_once("../Connect.php");
                 '</tr>'.
             '</table>';
 
-
-
             $query="INSERT INTO products values( 0,'$prod_name','$prod_stock','$prod_value','$prod_category','$prod_sub_category','$absolute_path','$prod_description' )";
 
             $result=mysqli_query($dbc,$query) or die(mysqli_error($dbc));
@@ -121,9 +119,7 @@ include_once("../Connect.php");
             echo '<p id="failure_p">File is not an image. Try again </p>';
         }
     }
-
     ?>
-
     <br />
     <p><?php echo '<br /> <a href="../main.php">Go Back</a> <br />';?></p>
 
