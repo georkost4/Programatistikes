@@ -154,7 +154,7 @@ else $flag=false;
 								'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
 								'<a href="#" onclick="myFunction(1)">My Account</a>' .
 							'</form>' .
-							'<form id="wallet" action="wallet.php" method="POST">' .
+							'<form id="wallet" action="wallet_php_files/wallet.php" method="POST">' .
 								'<input type="text" name="user_id" value="' . $_SESSION['user_id'] . '" hidden><br>' .
 								'<a href="#" onclick="myFunction(2)">My Wallet</a>' .
 							'</form>' .

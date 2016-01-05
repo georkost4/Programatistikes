@@ -18,8 +18,8 @@
     </div>
 
     <div class="main_content">
-        <p>Chosen Category <?php echo $category;?></p>
-        <p>Chosen sub-Category <?php if(isset($_GET['sub-category']))echo $sub_category;?></p>
+        <p>Chosen Category: <?php echo $category;?></p>
+        <p>Chosen sub-Category: <?php if(isset($_GET['sub-category']))echo $sub_category;?></p>
 
         <?php
             if(isset($sub_category))  $query = "SELECT * FROM products WHERE category='$category' AND sub_category='$sub_category' ORDER BY name DESC";
@@ -37,7 +37,7 @@
                     '</tr>' .
                     '<tr>' .
                     '<td><p>' . $row["description"] . '</p></td>' .
-                    '<td><a href="buy.php?id=' . $row["product_id"].'">Buy</a></td>' .
+                    '<td><a href="buy.php?id=' . $row["product_id"].'&price=' . $row["value"].'">Buy</a></td>' .
                     '</tr>';
             }
             echo '</table>';

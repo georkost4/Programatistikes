@@ -8,7 +8,6 @@ $result=mysqli_query($dbc,$query) or die (mysqli_error($dbc));
 
 while($row=mysqli_fetch_array($result)) $tpath=$row['image_path'];
 
-echo 'Image path:'.$path;
 
 $path=explode("/",$tpath);
 
@@ -21,6 +20,6 @@ $query="DELETE FROM products where product_id=$id";
 $result=mysqli_query($dbc,$query) or die(mysqli_error($dbc)) ;
 
 if($result) echo 'Product successfully Removed';
-//header("location:RemoveProducts.php");
+header("location:RemoveProducts.php");
 
 ?>

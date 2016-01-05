@@ -18,7 +18,7 @@ body
     width: 900px;
     border-left-style: solid;
     border-left-color: #e5ff62;
-    border-right-color: #ffb9e9;
+    border-right-color: #fff694;
     border-right-style: solid;
     text-align: center;
     padding-left: 40px;
@@ -44,10 +44,8 @@ body
 }
 .footer
 {
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
-    margin-top: 3em
-
+    color: #000;
+    background-color: #1F497D;
+    width: 300px;
+    margin: auto;
 }

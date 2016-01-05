@@ -1,6 +1,7 @@
 <?php
 include_once("../connect.php");
-$prod_id=$_GET['id'];
+$prod_id = $_GET['id'];
+$price   = $_GET['price'];
 $shipping_form='<br /><br /><br />'.
       '<form action="" method="post">'.
     '<table id="shipping_details_form">'.
@@ -50,13 +51,21 @@ session_start();
 
                 if($stock>0)
                 {
+                    if(checkFunds($_SESSION['user_id'],$dbc,$price))
+                    {
+                        buyItem($prod_id,$dbc);
 
-                    buyItem($prod_id,$dbc);
+                        echo ' You successfully bought the product <br />'.
+                            '<br /> <a href="../main.php">Go to home page</a> ';
 
-                    echo ' You successfully bought the product <br />'.
+                        updateFunds($_SESSION['user_id'],$dbc,$price);
+
+                    }
+                    else echo 'No available funds'.
                         '<br /> <a href="../main.php">Go to home page</a> ';
+
                 }
-                else echo ' This product is no more available for purchase <br /> '.
+                else echo ' This product is no more available for purchase or you have no funds. <br /> '.
                     '<br /> <a href="../main.php">Go to home page</a> ';
 
             }
@@ -119,6 +128,26 @@ session_start();
             $result = mysqli_query($link, $query) or die(mysqli_error($link));
 
             return true;
+        }
+
+        function checkFunds($user,$link,$price)
+        {
+            $query="SELECT balance from funds where id=$user";
+
+            $result=mysqli_query($link,$query) or die(mysqli_error($link));
+
+            $row=mysqli_fetch_array($result);
+
+            if ($row['balance']>0&&$row['balance']>=$price) return true;
+            else return false;
+        }
+
+        function updateFunds($user,$link,$price)
+        {
+            $query  = "UPDATE  funds  set balance=balance-$price where id=$user";
+
+            $result = mysqli_query($link,$query) or die(mysqli_error($link));
+
         }
         ?>
     </body>

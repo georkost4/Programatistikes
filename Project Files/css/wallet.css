@@ -1,0 +1,50 @@
+body
+{
+    width:800px;
+    margin: auto;
+    text-align: center;
+    border-left-style: dashed;
+    border-right-style: dashed;
+}
+.main_content a
+{
+    clear: both;
+    text-decoration: none;
+    font-size:30px;
+    color: #ca962b;
+
+}
+a:hover
+{
+    color:blue;
+}
+.main_content .addMoney
+{
+    margin-top: 100px;
+    float: left;
+    margin-left: 10px;
+}
+.main_content .addMoney p
+{
+    font-size: 20px;
+}
+.main_content .balance
+{
+    margin-top: 100px;
+    float: right;
+    margin-right: 10px;
+}
+.main_content .balance p
+{
+    font-size:30px;
+    color:green;
+}
+.footer
+{
+    clear: both;
+    position: relative;
+    bottom:0;
+    width: 200px;
+    margin: auto;
+    background-color: #ff362e;
+}
