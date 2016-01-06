@@ -60,6 +60,9 @@ session_start();
 
                         updateFunds($_SESSION['user_id'],$dbc,$price);
 
+                        $funds_left=showFunds($dbc,$_SESSION['user_id']);
+                        echo '<br />Remaining money in your account:'.$funds_left;
+
                     }
                     else echo 'No available funds'.
                         '<br /> <a href="../main.php">Go to home page</a> ';
@@ -148,6 +151,13 @@ session_start();
 
             $result = mysqli_query($link,$query) or die(mysqli_error($link));
 
+        }
+        function showFunds($link,$user)
+        {
+            $query="SELECT balance from funds where id=$user";
+            $result=mysqli_query($link,$query) or die(mysqli_error($link));
+            $row=mysqli_fetch_array($result);
+            return $row['balance'];
         }
         ?>
     </body>

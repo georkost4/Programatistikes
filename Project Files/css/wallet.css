@@ -5,6 +5,7 @@ body
     text-align: center;
     border-left-style: dashed;
     border-right-style: dashed;
+    background-color: #778280;
 }
 .main_content a
 {
