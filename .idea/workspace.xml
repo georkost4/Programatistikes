@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b3782d-1fed-4ae9-8f28-f5d947fbf48f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/images/site_images/background1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/images/site_images/background2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/images/site_images/background3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/images/site_images/shop1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/images/site_images/shop2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/images/site_images/shop3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/images/site_images/shop4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/images/site_images/shop5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Programatistikes-master.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/css/contact.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/css/shopPoints.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/css/shopposition.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/pages/argos.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/pages/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/pages/galatsi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/pages/javascript/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/pages/kalamaria.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/pages/kavala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/pages/shopPoints.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project Files/pages/volos.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project Files/images/site_images/welcomeImage.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project Files/pages/account_php_files/account.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Thumbs.db" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project Files/images/site_images/background.png" afterPath="$PROJECT_DIR$/Project Files/images/site_images/background.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project Files/css/main.css" afterPath="$PROJECT_DIR$/Project Files/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project Files/css/wallet.css" afterPath="$PROJECT_DIR$/Project Files/css/wallet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project Files/pages/main.php" afterPath="$PROJECT_DIR$/Project Files/pages/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project Files/pages/products_php_files/buy.php" afterPath="$PROJECT_DIR$/Project Files/pages/products_php_files/buy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.html" afterPath="$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.php" afterPath="$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.php" />
     </list>
     <ignored path="Project.iws" />
@@ -89,12 +60,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project Files/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6978673">
+            <state vertical-scroll-proportion="-58.192307">
               <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38270143">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <marker date="1452479870635" expanded="true" signature="375:461" placeholder="INSERT INTO users..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +122,6 @@
         <option value="$PROJECT_DIR$/Project Files/pages/addProducts.php" />
         <option value="$PROJECT_DIR$/Project Files/pages/register_login_php_files/logout.php" />
         <option value="$PROJECT_DIR$/Project Files/css/register.css" />
-        <option value="$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.html" />
         <option value="$PROJECT_DIR$/Project Files/css/buy.css" />
         <option value="$PROJECT_DIR$/Project Files/pages/products_php_files/addProducts.php" />
         <option value="$PROJECT_DIR$/Project Files/pages/products_php_files/RemoveProducts.php" />
@@ -160,6 +152,8 @@
         <option value="$PROJECT_DIR$/Project Files/pages/products_php_files/buy.php" />
         <option value="$PROJECT_DIR$/Project Files/pages/main.php" />
         <option value="$PROJECT_DIR$/Project Files/css/main.css" />
+        <option value="$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.html" />
+        <option value="$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.php" />
       </list>
     </option>
   </component>
@@ -257,7 +251,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="products_php_files" />
+              <option name="myItemId" value="register_login_php_files" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -511,8 +505,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project Files/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6978673">
+        <state vertical-scroll-proportion="-58.192307">
           <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1452479870635" expanded="true" signature="375:461" placeholder="INSERT INTO users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project Files/pages/register_login_php_files/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38270143">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding />
         </state>
       </provider>
