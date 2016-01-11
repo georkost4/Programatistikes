@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Programatistikes-master.iml" filepath="$PROJECT_DIR$/.idea/Programatistikes-master.iml" />
       <module fileurl="file://C:/xampp/htdocs/Programmatistikes/Project/.idea/Project.iml" filepath="C:/xampp/htdocs/Programmatistikes/Project/.idea/Project.iml" />
     </modules>
   </component>

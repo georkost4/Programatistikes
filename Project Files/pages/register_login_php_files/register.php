@@ -15,5 +15,5 @@ $query="INSERT INTO users VALUES (0,'$first_name','$last_name','$email','$userna
 $result=mysqli_query($dbc,$query)
 or die('Something went wrong');
 echo 'You successfully Registered <br />';
-echo '<a href="main.php">Go back to main page</a>';
+echo '<a href="../main.php">Go back to main page</a>';
 ?>

@@ -118,8 +118,6 @@ session_start();
 
             while($row=mysqli_fetch_array($result)) $stock=$row['stock'];
 
-            echo 'stock = '.$stock.'<br />';   //DELETE THIS LINE FOR PRESENTATION
-
             return $stock;
 
         }
